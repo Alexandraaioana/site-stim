@@ -17,3 +17,9 @@ nav a:hover {
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Marsh Stencil Regular';
+    src: url('fonts/Marsh Stencil Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
