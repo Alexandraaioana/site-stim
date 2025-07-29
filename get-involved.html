@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implică-te - FIIRBots</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#15253E',
+                        'secondary': '#A5DAF3',
+                        'accent': '#FEF9EF',
+                        'light-purple': '#CCCCFF',
+                        'purple': '#5D3FD3'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-accent text-primary">
+
+    <!-- Header -->
+    <div id="header-container"></div>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg py-20 mt-16 text-center text-accent">
+        <h1 class="text-5xl font-bold mb-4">Implică-te în susținerea echipei!</h1>
+        <p class="text-xl max-w-3xl mx-auto">
+            Poți contribui la dezvoltarea proiectelor noastre prin redirecționarea unei părți din impozitul pe venit.
+        </p>
+    </section>
+
+    <!-- Redirecționare taxe -->
+    <section class="py-20 bg-accent">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-primary mb-4">Formulare disponibile</h2>
+            <p class="text-xl text-gray-600 mb-12">
+                Alege formularul potrivit pentru a ne susține activitatea.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <!-- Formular 3.5% -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition">
+                    <h3 class="text-2xl font-bold text-primary mb-4">Formular 3.5%</h3>
+                    <p class="text-gray-600 mb-6">
+                        Dacă ești persoană fizică, poți redirecționa 3.5% din impozitul pe venit pentru a sprijini activitățile echipei noastre.
+                    </p>
+                    <a href="#" class="bg-purple text-accent px-6 py-2 rounded-lg font-semibold hover:bg-opacity-80">Descarcă formular</a>
+                </div>
+
+                <!-- Formular 20% -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition">
+                    <h3 class="text-2xl font-bold text-primary mb-4">Formular 20%</h3>
+                    <p class="text-gray-600 mb-6">
+                        Dacă reprezinți o companie, poți redirecționa 20% din impozitul pe profit către sponsorizarea echipei noastre.
+                    </p>
+                    <a href="#" class="bg-purple text-accent px-6 py-2 rounded-lg font-semibold hover:bg-opacity-80">Descarcă formular</a>
+                </div>
+            </div>
+
+            <div class="max-w-4xl mx-auto bg-gray-50 p-8 rounded-xl shadow-lg mt-12 text-left">
+                <h3 class="text-2xl font-bold text-primary mb-4">Cum funcționează redirecționarea?</h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                    <li>Completează formularul corespunzător (3.5% sau 20%).</li>
+                    <li>Trimite formularul către ANAF online sau depune-l fizic.</li>
+                    <li>Confirmă redirecționarea prin documentul generat de ANAF.</li>
+                    <li>Noi folosim fondurile exclusiv pentru susținerea proiectelor educaționale și de robotică.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

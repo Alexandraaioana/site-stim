@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proiecte - FIIRBots</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#15253E',
+                        'secondary': '#A5DAF3',
+                        'accent': '#FEF9EF',
+                        'light-purple': '#CCCCFF',
+                        'purple': '#5D3FD3'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-accent text-primary">
+
+    <!-- Header -->
+    <div id="header-container"></div>
+
+    <!-- Projects Section -->
+    <section class="py-24 mt-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-primary mb-4">Proiectele Noastre</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Explorează inovațiile și soluțiile robotice pe care le-am dezvoltat.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+                    <div class="bg-gradient-to-r from-secondary to-light-purple h-48 flex items-center justify-center">
+                        <svg class="w-20 h-20 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-3">Robot Autonom de Navigație</h3>
+                        <p class="text-gray-600 mb-4">
+                            Sistem de navigație autonomă cu senzori LIDAR și algoritmi de planificare a traseului pentru medii complexe.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-secondary text-primary px-3 py-1 rounded-full text-sm">ROS</span>
+                            <span class="bg-light-purple text-primary px-3 py-1 rounded-full text-sm">Python</span>
+                            <span class="bg-purple text-accent px-3 py-1 rounded-full text-sm">SLAM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+                    <div class="bg-gradient-to-r from-purple to-primary h-48 flex items-center justify-center">
+                        <svg class="w-20 h-20 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-3">Braț Robotic Industrial</h3>
+                        <p class="text-gray-600 mb-4">
+                            Braț robotic cu 6 grade de libertate pentru aplicații industriale de precizie și automatizare.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-secondary text-primary px-3 py-1 rounded-full text-sm">Arduino</span>
+                            <span class="bg-light-purple text-primary px-3 py-1 rounded-full text-sm">C++</span>
+                            <span class="bg-purple text-accent px-3 py-1 rounded-full text-sm">Kinematics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+                    <div class="bg-gradient-to-r from-secondary to-purple h-48 flex items-center justify-center">
+                        <svg class="w-20 h-20 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-3">Sistem de Viziune Artificială</h3>
+                        <p class="text-gray-600 mb-4">
+                            Algoritmi avansați de procesare a imaginilor pentru recunoașterea și clasificarea obiectelor în timp real.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-secondary text-primary px-3 py-1 rounded-full text-sm">OpenCV</span>
+                            <span class="bg-light-purple text-primary px-3 py-1 rounded-full text-sm">TensorFlow</span>
+                            <span class="bg-purple text-accent px-3 py-1 rounded-full text-sm">AI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

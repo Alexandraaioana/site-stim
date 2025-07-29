@@ -1,0 +1,13 @@
+/* style.css */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden { display: none; }
+
+/* Animație mică pentru hover pe linkuri */
+nav a:hover {
+    opacity: 0.8;
+}

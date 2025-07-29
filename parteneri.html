@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parteneri - FIIRBots</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#15253E',
+                        'secondary': '#A5DAF3',
+                        'accent': '#FEF9EF',
+                        'light-purple': '#CCCCFF',
+                        'purple': '#5D3FD3'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-accent text-primary">
+
+    <!-- Header -->
+    <div id="header-container"></div>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg py-20 mt-16 text-center text-accent">
+        <h1 class="text-5xl font-bold mb-4">Partenerii Noștri</h1>
+        <p class="text-xl max-w-3xl mx-auto">
+            Colaborăm cu organizații și companii care cred în educație, inovație și viitorul roboticii.
+        </p>
+    </section>
+
+    <!-- Parteneri Grid -->
+    <section class="py-20 bg-accent">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-primary mb-12">Parteneri principali</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Partener 1 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
+                    <img src="images/partener1.png" alt="Partener 1" class="mx-auto mb-4 h-20">
+                    <h3 class="text-xl font-bold mb-2">Partener 1</h3>
+                    <p class="text-gray-600">Susține dezvoltarea tehnologică prin mentorat și resurse pentru echipa noastră.</p>
+                </div>
+                <!-- Partener 2 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
+                    <img src="images/partener2.png" alt="Partener 2" class="mx-auto mb-4 h-20">
+                    <h3 class="text-xl font-bold mb-2">Partener 2</h3>
+                    <p class="text-gray-600">Oferă expertiză și echipamente de ultimă generație pentru proiectele echipei.</p>
+                </div>
+                <!-- Partener 3 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
+                    <img src="images/partener3.png" alt="Partener 3" class="mx-auto mb-4 h-20">
+                    <h3 class="text-xl font-bold mb-2">Partener 3</h3>
+                    <p class="text-gray-600">Ne sprijină în organizarea de evenimente educaționale și competiții de robotică.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gray-50 text-center">
+        <h2 class="text-4xl font-bold text-primary mb-4">Vrei să devii partener?</h2>
+        <p class="text-xl text-gray-600 mb-6">
+            Susține echipa FIIRBots și contribuie la formarea următoarei generații de ingineri.
+        </p>
+        <a href="contact.html" class="bg-purple text-accent px-8 py-3 rounded-lg font-semibold hover:bg-opacity-80">
+            Devino Partener
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

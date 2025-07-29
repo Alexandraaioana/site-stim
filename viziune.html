@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viziunea Echipei - FIIRBots</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#15253E',
+                        'secondary': '#A5DAF3',
+                        'accent': '#FEF9EF',
+                        'light-purple': '#CCCCFF',
+                        'purple': '#5D3FD3'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-accent text-primary">
+
+    <!-- Header -->
+    <div id="header-container"></div>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg py-20 mt-16 text-center text-accent">
+        <h1 class="text-5xl font-bold mb-4">Viziunea FIIRBots</h1>
+        <p class="text-xl max-w-3xl mx-auto">
+            Ne propunem să transformăm pasiunea pentru robotică într-o forță reală pentru inovare, educație și progres tehnologic.
+        </p>
+    </section>
+
+    <!-- Valorile Echipei -->
+    <section class="py-20 bg-accent">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-primary mb-12">Valorile Noastre</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Valoare 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+                    <div class="bg-purple w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Inovație</h3>
+                    <p class="text-gray-600">
+                        Căutăm constant soluții noi pentru a rezolva provocările tehnologice prin idei creative și aplicabile.
+                    </p>
+                </div>
+                <!-- Valoare 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+                    <div class="bg-secondary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Colaborare</h3>
+                    <p class="text-gray-600">
+                        Lucrăm împreună, ca o echipă unită, sprijinindu-ne reciproc și învățând din experiențele comune.
+                    </p>
+                </div>
+                <!-- Valoare 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+                    <div class="bg-light-purple w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm-1 16H9V7h9v14z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Educație</h3>
+                    <p class="text-gray-600">
+                        Investim în pregătirea noilor generații de ingineri prin mentorat, traininguri și competiții practice.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Obiective pe termen lung -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-primary text-center mb-12">Obiectivele Noastre</h2>
+            <ul class="list-disc list-inside text-gray-700 text-lg space-y-4">
+                <li>Participarea anuală la competiții internaționale de robotică.</li>
+                <li>Dezvoltarea unor proiecte cu aplicabilitate reală în industrie.</li>
+                <li>Crearea unei comunități de pasionați de robotică și tehnologie.</li>
+                <li>Colaborarea cu universități și companii din domeniul tehnologic.</li>
+                <li>Susținerea educației STEM în rândul elevilor și studenților.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-accent text-center">
+        <h2 class="text-4xl font-bold text-primary mb-4">Hai să construim viitorul împreună!</h2>
+        <p class="text-xl text-gray-600 mb-6">Alătură-te misiunii noastre și implică-te în dezvoltarea roboticii.</p>
+        <a href="get-involved.html" class="bg-purple text-accent px-8 py-3 rounded-lg font-semibold hover:bg-opacity-80">Implică-te</a>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
