@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proiecte </title>
+    <title>Proiecte</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -29,25 +29,24 @@
     <!-- Header -->
     <div id="header-container"></div>
 
-    <!-- Future Projects -->
-    <section class="py-20 bg-accent">
+    <!-- Proiecte în desfășurare -->
+    <section class="pt-20 bg-accent">
         <div class="max-w-7xl mx-auto mt-16 px-4">
             <h2 class="text-3xl font-bold mb-8">Proiecte în desfășurare</h2>
             <div class="grid md:grid-cols-2 gap-8">
-                <!-- Project 1 -->
-                <div class="bg-primary text-accent rounded-xl p-6 flex flex-col justify-between">
+               <!-- Project 1 -->   
+               <div class="bg-primary text-accent rounded-xl p-6 flex flex-col justify-between">
                     <div>
                         <h3 class="text-lg font-bold mb-4">Lorem Ipsum</h3>
                         <p class="text-sm mb-6">
                             Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean.
-                            Iaculis massa nisl malesuada lacinia integer nunc posuere. Blandit quis suspendisse aliquet nisi sodales.
-                        </p>
+                            Iaculis massa nisl malesuada lacinia integer nunc posuere. Blandit quis suspendisse aliquet nisi sodales.                        </p>
                     </div>
                     <div class="flex gap-4">
-                        <img src="images/future1.jpg" alt="Future Project 1" class="rounded-lg w-1/2">
-                        <img src="images/future2.jpg" alt="Future Project 1" class="rounded-lg w-1/2">
+                        <img src="images/fundal join us.png" alt="1" class="rounded-md w-1/2">
+                        <img src="images/fundal join us.png" alt="1" class="rounded-md w-1/2">
                     </div>
-                    <a href="#" class="mt-4 text-sm underline hover:text-secondary">See more →</a>
+                    <button data-popup="popup1" class="mt-4 text-sm underline hover:text-secondary text-left">See more →</button>
                 </div>
 
                 <!-- Project 2 -->
@@ -56,80 +55,126 @@
                         <h3 class="text-lg font-bold mb-4">Lorem Ipsum</h3>
                         <p class="text-sm mb-6">
                             Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean.
-                            Iaculis massa nisl malesuada lacinia integer nunc posuere. Blandit quis suspendisse aliquet nisi sodales.
-                        </p>
+                            Iaculis massa nisl malesuada lacinia integer nunc posuere. Blandit quis suspendisse aliquet nisi sodales.                        </p>
                     </div>
                     <div class="flex gap-4">
-                        <img src="images/future3.jpg" alt="Future Project 2" class="rounded-lg w-1/2">
-                        <img src="images/future4.jpg" alt="Future Project 2" class="rounded-lg w-1/2">
+                        <img src="images/fundal join us.png" alt="2" class="rounded-lg w-1/2">
+                        <img src="images/fundal join us.png" alt="2" class="rounded-lg w-1/2">
                     </div>
-                    <a href="#" class="mt-4 text-sm underline hover:text-secondary">See more →</a>
+                    <button data-popup="popup2" class="mt-4 text-sm underline hover:text-secondary text-left">See more →</button>
                 </div>
+
+                <!-- POPUP 1 -->
+                <div id="popup1" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+                    <div class="bg-white rounded-xl shadow-lg w-11/12 md:w-2/3 lg:w-1/2 p-6 relative">
+                        <button class="absolute top-3 right-3 text-gray-500 hover:text-black text-2xl font-bold close-popup">&times;</button>
+                        <h3 class="text-2xl font-bold mb-4 text-primary">Lorem Ipsum</h3>
+                        <p class="text-gray-700 mb-4">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean.
+                            Iaculis massa nisl malesuada lacinia integer nunc posuere. Blandit quis suspendisse aliquet nisi sodales.Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean.
+                            Iaculis massa nisl malesuada lacinia integer nunc posuere. Blandit quis suspendisse aliquet nisi sodales.                        </p>
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <img src="images/landingPage.jpeg" class="rounded-md">
+                            <img src="images/landingPage.jpeg" class="rounded-md">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- POPUP 2 -->
+                <div id="popup2" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+                    <div class="bg-white rounded-xl shadow-lg w-11/12 md:w-2/3 lg:w-1/2 p-6 relative">
+                        <button class="absolute top-3 right-3 text-gray-500 hover:text-black text-2xl font-bold close-popup">&times;</button>
+                        <h3 class="text-2xl font-bold mb-4 text-primary">Lorem Ipsum</h3>
+                        <p class="text-gray-700 mb-4">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean.
+                            Iaculis massa nisl malesuada lacinia integer nunc posuere. Blandit quis suspendisse aliquet nisi sodales.                        </p>
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <img src="images/landingPage.jpeg" class="rounded-md">
+                            <img src="images/landingPage.jpeg" class="rounded-md">
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Recent Projects -->
-    <section class="py-20 bg-white">
+    <!-- Proiecte recente -->
+    <section class="py-20 bg-gradient-to-b from-accent to-white">
         <div class="max-w-7xl mx-auto px-4">
             <h2 class="text-3xl font-bold mb-8">Proiecte recente</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
                 <!-- Project 1 -->
-                <div class="bg-white rounded-xl border-2 border-blue-300 hover:border-blue-700 transition-colors duration-300 p-6 flex flex-col text-center">
-                    <h3 class="text-lg font-bold mb-2">Lorem Ipsum</h3>
-                    <p class="text-gray-600 text-sm mb-4">
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean.
-                    </p>
-                    <img src="images/recent1.jpg" alt="Recent Project 1" class="rounded-lg mt-auto">
-                </div>
+                <div class="bg-white rounded-xl border-2 border-blue-300 hover:border-blue-700 transition-colors duration-300 flex flex-col text-center overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold mb-2">Lorem Ipsum</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean.
+                        </p>
+                    </div>
+                    <img src="images/fundal join us.png" alt="Recent Project 1" class="w-full">
+                </div>                
+                
 
                 <!-- Project 2 -->
-                <div class="bg-white rounded-xl border-2 border-blue-300 hover:border-blue-700 transition-colors duration-300 p-6 flex flex-col text-center">
-                    <h3 class="text-lg font-bold mb-2">Lorem Ipsum</h3>
-                    <p class="text-gray-600 text-sm mb-4">
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean.
-                    </p>
-                    <img src="images/recent2.jpg" alt="Recent Project 2" class="rounded-lg mt-auto">
-                </div>
+                <div class="bg-white rounded-xl border-2 border-blue-300 hover:border-blue-700 transition-colors duration-300 flex flex-col text-center overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold mb-2">Lorem Ipsum</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean.
+                        </p>
+                    </div>
+                    <img src="images/fundal join us.png" alt="Recent Project 1" class="w-full">
+                </div>                
+                
 
                 <!-- Project 3 -->
-                <div class="bg-white rounded-xl border-2 border-blue-300 hover:border-blue-700 transition-colors duration-300 p-6 flex flex-col text-center">
-                    <h3 class="text-lg font-bold mb-2">Lorem Ipsum</h3>
-                    <p class="text-gray-600 text-sm mb-4">
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean.
-                    </p>
-                    <img src="images/recent3.jpg" alt="Recent Project 3" class="rounded-lg mt-auto">
+                <div class="bg-white rounded-xl border-2 border-blue-300 hover:border-blue-700 transition-colors duration-300 flex flex-col text-center overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold mb-2">Lorem Ipsum</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean.
+                        </p>
+                    </div>
+                    <img src="images/fundal join us.png" alt="Recent Project 1" class="w-full">
                 </div>
-            </div>
-           
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
-                <div class="bg-white rounded-xl border-2 border-blue-300 hover:border-blue-700 transition-colors duration-300 p-6 flex flex-col text-center">
-                    <h3 class="text-lg font-bold mb-2">Lorem Ipsum</h3>
-                    <p class="text-gray-600 text-sm mb-4">
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean.
-                    </p>
-                    <img src="images/recent1.jpg" alt="Recent Project 1" class="rounded-lg mt-auto">
-                </div>
+                
+            
+                <!-- Project 4 -->
+                <div class="bg-white rounded-xl border-2 border-blue-300 hover:border-blue-700 transition-colors duration-300 flex flex-col text-center overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold mb-2">Lorem Ipsum</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean.
+                        </p>
+                    </div>
+                    <img src="images/fundal join us.png" alt="Recent Project 1" class="w-full">
+                </div>                
+                
 
-                <!-- Project 2 -->
-                <div class="bg-white rounded-xl border-2 border-blue-300 hover:border-blue-700 transition-colors duration-300 p-6 flex flex-col text-center">
-                    <h3 class="text-lg font-bold mb-2">Lorem Ipsum</h3>
-                    <p class="text-gray-600 text-sm mb-4">
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean.
-                    </p>
-                    <img src="images/recent2.jpg" alt="Recent Project 2" class="rounded-lg mt-auto">
-                </div>
+                <!-- Project 5 -->
+                <div class="bg-white rounded-xl border-2 border-blue-300 hover:border-blue-700 transition-colors duration-300 flex flex-col text-center overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold mb-2">Lorem Ipsum</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean.
+                        </p>
+                    </div>
+                    <img src="images/fundal join us.png" alt="Recent Project 1" class="w-full">
+                </div>                
+                
 
-                <!-- Project 3 -->
-                <div class="bg-white rounded-xl border-2 border-blue-300 hover:border-blue-700 transition-colors duration-300 p-6 flex flex-col text-center">
-                    <h3 class="text-lg font-bold mb-2">Lorem Ipsum</h3>
-                    <p class="text-gray-600 text-sm mb-4">
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean.
-                    </p>
-                    <img src="images/recent3.jpg" alt="Recent Project 3" class="rounded-lg mt-auto">
-                </div>
-            </div>
+                <!-- Project 6 -->
+                <div class="bg-white rounded-xl border-2 border-blue-300 hover:border-blue-700 transition-colors duration-300 flex flex-col text-center overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold mb-2">Lorem Ipsum</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean.
+                        </p>
+                    </div>
+                    <img src="images/fundal join us.png" alt="Recent Project 1" class="w-full">
+                </div>                
+                
         </div>
     </section>
 

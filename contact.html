@@ -1,124 +1,86 @@
-<!DOCTYPE html>
-<html lang="ro">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - FIIRBots</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'primary': '#15253E',
-                        'secondary': '#A5DAF3',
-                        'accent': '#FEF9EF',
-                        'light-purple': '#CCCCFF',
-                        'purple': '#5D3FD3'
+
+   <!DOCTYPE html>
+    <html lang="ro">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            'primary': '#15253E',
+                            'secondary': '#A5DAF3',
+                            'accent': '#FEF9EF',
+                            'light-purple': '#CCCCFF',
+                            'purple': '#5D3FD3'
+                        }
                     }
                 }
             }
-        }
-    </script>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body class="bg-accent text-primary">
-
-    <!-- Header din fișier separat -->
-    <div id="header-container"></div>
-
-    <!-- Contact Section -->
-    <section class="py-24 mt-16 gradient-bg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-accent mb-4">Contactează-ne</h2>
-                <p class="text-xl text-secondary max-w-3xl mx-auto">
-                    Ești interesat să te alături echipei sau să colaborezi cu noi? Hai să discutăm!
-                </p>
+        </script>
+         <link rel="stylesheet" href="style.css">
+         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body class="bg-accent text-primary font-montserrat">
+    
+        <!-- Header -->
+        <div id="header-container"></div>
+    
+        <!-- Contact Section -->
+        <section class="py-24 bg-gray-50 mt-16">
+            <div class="max-w-5xl mx-auto px-4 text-center mb-12">
+                <h1 class="text-5xl font-bold mb-4">Trimite-ne un mesaj</h1>
             </div>
-
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <!-- Contact Info -->
-                <div class="space-y-8">
-                    <div class="flex items-center">
-                        <div class="bg-accent w-12 h-12 rounded-full flex items-center justify-center mr-4">
-                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-accent">Adresa</h3>
-                            <p class="text-secondary">Splaiul Independenței 313, București<br>Facultatea de Inginerie Industrială și Robotică</p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-center">
-                        <div class="bg-accent w-12 h-12 rounded-full flex items-center justify-center mr-4">
-                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-accent">Email</h3>
-                            <p class="text-secondary">contact@fiirbots.ro<br>echipa.robotica@fiir.upb.ro</p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-center">
-                        <div class="bg-accent w-12 h-12 rounded-full flex items-center justify-center mr-4">
-                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-accent">Social Media</h3>
-                            <p class="text-secondary">@fiirbots_upb<br>FIIRBots UNSTPB</p>
-                        </div>
-                    </div>
-                </div>
-
+    
+            <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 px-4">
+                
+                <!--Formspree de adaugat-->
+                
                 <!-- Contact Form -->
-                <div class="bg-accent rounded-xl p-8 shadow-2xl">
-                    <h3 class="text-2xl font-bold text-primary mb-6">Trimite-ne un mesaj</h3>
-                    <form class="space-y-6">
-                        <div>
-                            <label class="block text-primary font-semibold mb-2">Nume</label>
-                            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple focus:border-transparent" placeholder="Numele tău">
-                        </div>
-                        <div>
-                            <label class="block text-primary font-semibold mb-2">Email</label>
-                            <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple focus:border-transparent" placeholder="email@exemplu.com">
-                        </div>
-                        <div>
-                            <label class="block text-primary font-semibold mb-2">Mesaj</label>
-                            <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple focus:border-transparent" placeholder="Scrie-ne mesajul tău aici..."></textarea>
-                        </div>
-                        <button type="button" onclick="showContactDemo()" class="w-full bg-purple hover:bg-opacity-80 text-accent py-3 rounded-lg font-semibold transition-all transform hover:scale-105">
-                            Trimite Mesajul
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h2 class="text-lg font-semibold mb-6">Formular online</h2>
+                    <form class="space-y-4">
+                        <input type="text" placeholder="Name" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-purple focus:outline-none">
+                        <input type="email" placeholder="Email" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-purple focus:outline-none">
+                        <input type="tel" placeholder="Phone" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-purple focus:outline-none">
+                        <select class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-purple focus:outline-none">
+                            <option>Alege un motiv</option>
+                            <option>optiune 1</option>
+                            <option>optiune 2</option>
+                            <option>optiune 3</option>
+                        </select>
+                        <textarea placeholder="Message" rows="4" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-purple focus:outline-none"></textarea>
+                        <button type="submit" class="w-full bg-purple text-accent py-3 rounded-lg font-semibold hover:bg-opacity-80 transition">
+                            Trimite mesajul
                         </button>
                     </form>
-                    <div id="contact-demo" class="hidden mt-4 p-4 bg-secondary rounded-lg">
-                        <p class="text-primary font-semibold">
-                            Demo: Mulțumim pentru mesaj! Aceasta este o versiune demonstrativă - formularul nu trimite mesaje reale.
-                        </p>
+                </div>
+    
+                <!-- Contact Details -->
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h2 class="text-lg font-semibold mb-6">Date de contact</h2>
+                    <p class="mb-4"><strong>Email:</strong> <a href="mailto:loremipsum@gmail.com" class="text-purple hover:underline">contact@stim-ong.ro</a></p>
+                    <p class="mb-6"><strong>Phone:</strong> <a href="tel:+40123456789" class="text-purple hover:underline">+40 123 456 789</a></p>
+    
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="font-bold">București</h3>
+                            <p>Splaiul Independenței 313<br>Romania</p>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Footer din fișier separat -->
-    <div id="footer-container"></div>
-
-    <script src="scripts.js"></script>
-    <script>
-        function showContactDemo() {
-            const demo = document.getElementById('contact-demo');
-            demo.classList.remove('hidden');
-            setTimeout(() => demo.classList.add('hidden'), 5000);
-        }
-    </script>
-</body>
-</html>
+        </section>
+    
+        <!-- Footer -->
+        <div id="footer-container"></div>
+    
+        <script src="scripts.js"></script>
+    </body>
+    </html>
+    

@@ -46,3 +46,36 @@ function setupLanguageToggle() {
         // aici putem adăuga logică de schimbare a textelor
     });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const popupButtons = document.querySelectorAll("[data-popup]");
+    const popups = document.querySelectorAll("[id^='popup']");
+    const closeButtons = document.querySelectorAll(".close-popup");
+
+    // Deschidere pop-up
+    popupButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const popupId = button.getAttribute("data-popup");
+            const popup = document.getElementById(popupId);
+            popup.classList.remove("hidden");
+            popup.classList.add("flex");
+        });
+    });
+
+    // Închidere cu X
+    closeButtons.forEach(btn => {
+        btn.addEventListener("click", () => {
+            btn.closest("[id^='popup']").classList.add("hidden");
+        });
+    });
+
+    // Închidere prin click în afara cardului
+    popups.forEach(popup => {
+        popup.addEventListener("click", (e) => {
+            if (e.target === popup) {
+                popup.classList.add("hidden");
+            }
+        });
+    });
+});
+

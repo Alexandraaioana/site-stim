@@ -11,3 +11,9 @@ body {
 nav a:hover {
     opacity: 0.8;
 }
+@font-face {
+    font-family: 'GlaserStencil';
+    src: url('fonts/Glaser Stencil.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
