@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FIIRBots - Acasă</title>
+    <title>Acasă</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -30,7 +30,7 @@
     <div id="header-container"></div>
 
  <!-- Hero Section -->
-<section class="relative pt-28 pb-20 px-6 md:px-16 lg:px-32 overflow-hidden bg-primary">
+ <section class="relative pt-28 pb-20 px-4 md:px-8 lg:px-16 overflow-hidden bg-primary">
     <!-- Hexagoane decorative -->
     <img src="images/hexagon plin.svg" class="absolute top-10 left-10 w-24 opacity-30" alt="Hexagon">
     <img src="images/Star 5.svg" class="absolute top-20 right-32 w-28 opacity-20" alt="Hexagon">
@@ -40,7 +40,9 @@
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-10 relative z-10">
         <!-- Text Section -->
         <div class="md:w-1/2 text-center md:text-left">
-            <h1 class="text-4xl md:text-5xl font-bold mb-6 text-accent" style="font-family: 'GlaserStencil', sans-serif; font-size: 3.5rem; line-height: 1.2;">STIM – NOI SUNTEM VIITORUL!</h1>
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 text-accent" >
+                STIM – NOI SUNTEM VIITORUL!
+            </h1>
             <p class="text-lg text-gray-200 mb-8 leading-relaxed">
                 ȘTIM – Noi Suntem Viitorul este o organizație non-guvernamentală dedicată sprijinirii 
                 educației în domeniile Știință, Tehnologie, Inginerie și Matematică (ȘTIM). Prin proiecte
@@ -52,22 +54,23 @@
                 Împreună, investim în viitor – un viitor format din idei, curaj și descoperiri.
             </p>
             <a href="get-involved.html" class="relative inline-block">
-                <!-- Contur alb dedesubt -->
                 <span class="absolute bottom-[-4px] right-[-4px] w-full h-full border-2 border-white rounded-lg"></span>
-                <!-- Butonul principal -->
                 <span class="relative bg-blue-300 text-primary font-bold px-6 py-3 rounded-lg hover:bg-blue-400 transition inline-block">
                     Get involved →
                 </span>
             </a>
         </div>
 
-        <!-- Image Section -->
-        <div class="md:w-1/2 flex justify-center">
-            <img src="images/landingPage.jpeg" alt="Echipa FIIRBots" class="rounded-2xl shadow-2xl max-w-full">
+        <!-- 3 Images Section -->
+        <div class="md:w-1/2 grid grid-cols-2 gap-3">
+            <!-- Big Image -->
+            <img src="images/landingPage.jpeg" alt="Echipa FIIRBots" class="rounded-2xl shadow-2xl w-full h-full col-span-1 row-span-2 object-cover">
+            <!-- Two Small Images -->
+            <img src="images/landingPage.jpeg" alt="Image 2" class="rounded-2xl shadow-2xl w-full h-full object-cover">
+            <img src="images/landingPage.jpeg" alt="Image 3" class="rounded-2xl shadow-2xl w-full h-full object-cover">
         </div>
     </div>
 </section>
-
 
 
 
@@ -98,49 +101,52 @@
         </div>
 
 
-        <div class="grid md:grid-cols-3 gap-8">
+        <div class="grid md:grid-cols-4 gap-6">
             <!-- Card 1 -->
-            <div class="bg-white border-2 border-gray-300 flex flex-col hover:border-purple transition duration-300">
-                <img src="images/fundal join us.png" alt="Robot Autonom" class="w-full h-40 object-cover p-2">
-                <div class="p-6">
-                    <div class="flex items-center justify-between">
-                        <h3 class="text-xl font-extrabold">Robot Autonom LANSAT</h3>
-                        
-                    </div>
-                    <p class="text-gray-600 text-sm mt-2">
-                        Am finalizat primul nostru robot autonom capabil de navigație completă.
-                    </p>
+            <div class="relative rounded-xl overflow-hidden shadow hover:shadow-lg transition duration-300 group">
+                <img src="images/fundal join us.png" 
+                     alt="Robot Autonom" 
+                     class="w-full h-80 object-cover transform group-hover:scale-110 transition duration-500">
+                <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-4">
+                    <h3 class="text-white text-lg font-bold">Robot Autonom LANSAT</h3>
+                    <p class="text-gray-200 text-sm">Am finalizat primul nostru robot autonom capabil de navigație completă.</p>
                 </div>
             </div>
         
             <!-- Card 2 -->
-            <div class="bg-purple text-accent flex flex-col transform hover:scale-105 transition duration-300">
-                <div class="p-6">
-                    <div class="flex items-center justify-between">
-                        <h3 class="text-xl font-extrabold">Competiție Internațională</h3>
-                        
-                    </div>
-                    <p class="text-accent text-sm mt-2 opacity-90">
-                        Echipa noastră a participat la una dintre cele mai mari competiții din lume.
-                    </p>
+            <div class="relative rounded-xl overflow-hidden shadow hover:shadow-lg transition duration-300 group">
+                <img src="images/fundal join us.png" 
+                     alt="Competiție Internațională" 
+                     class="w-full h-80 object-cover transform group-hover:scale-110 transition duration-500">
+                <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-4">
+                    <h3 class="text-white text-lg font-bold">Competiție Internațională</h3>
+                    <p class="text-gray-200 text-sm">Echipa noastră a participat la una dintre cele mai mari competiții din lume.</p>
                 </div>
-                <img src="images/fundal join us.png" alt="Competiție Internațională" class="w-full h-40 object-cover p-2">
             </div>
         
             <!-- Card 3 -->
-            <div class="bg-white border-2 border-gray-300 flex flex-col hover:border-purple transition duration-300">
-                <img src="images/fundal join us.png" alt="Parteneriat Strategic" class="w-full h-40 object-cover p-2">
-                <div class="p-6">
-                    <div class="flex items-center justify-between">
-                        <h3 class="text-xl font-extrabold">Parteneriat Strategic</h3>
-                        
-                    </div>
-                    <p class="text-gray-600 text-sm mt-2">
-                        Am semnat un parteneriat cu o companie lider în domeniul roboticii.
-                    </p>
+            <div class="relative rounded-xl overflow-hidden shadow hover:shadow-lg transition duration-300 group">
+                <img src="images/fundal join us.png" 
+                     alt="Parteneriat Strategic" 
+                     class="w-full h-80 object-cover transform group-hover:scale-110 transition duration-500">
+                <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-4">
+                    <h3 class="text-white text-lg font-bold">Parteneriat Strategic</h3>
+                    <p class="text-gray-200 text-sm">Am semnat un parteneriat cu o companie lider în domeniul roboticii.</p>
+                </div>
+            </div>
+        
+            <!-- Card 4 -->
+            <div class="relative rounded-xl overflow-hidden shadow hover:shadow-lg transition duration-300 group">
+                <img src="images/fundal join us.png" 
+                     alt="Proiect Nou" 
+                     class="w-full h-80 object-cover transform group-hover:scale-110 transition duration-500">
+                <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-4">
+                    <h3 class="text-white text-lg font-bold">Proiect Nou</h3>
+                    <p class="text-gray-200 text-sm">Lansăm un nou proiect de cercetare în robotică.</p>
                 </div>
             </div>
         </div>
+        
 
        
     </div>
@@ -151,7 +157,7 @@
    <!-- Redirecționare taxe -->
 <section class="py-20 bg-accent text-primary">
     <div class="max-w-7xl mx-auto px-4 ">
-        <h2 class="text-4xl font-bold mb-4 text-center">Redirecționează Taxele</h2>
+        <h2 class="text-4xl font-bold mb-4 text-center"   style="font-family: 'GlaserStencil', sans-serif; font-size: 3.5rem; line-height: 1.2;">Redirectioneaza Taxele</h2>
         <p class="text-lg text-gray-600 mb-12 text-left px-6">Susține echipa noastră prin redirecționarea impozitului pe 
             venit. alt text tebuie.Susține echipa noastră prin redirecționarea impozitului pe venit.</p>
 
