@@ -6,14 +6,18 @@
                 <div class="w-12 h-12">
                     <img src="images/logo.png" alt="FIIRBots Logo" class="w-full h-full object-contain">
                 </div>
-                <!-- Language Toggle -->
                 <button id="lang-toggle" class="text-accent text-sm font-semibold hover:text-secondary transition">
                     RO
                 </button>
             </div>
 
-            <!-- Menu -->
-            <div class="hidden md:block">
+            <!-- Hamburger Button -->
+            <button id="menu-toggle" class="block text-accent text-2xl focus:outline-none lg:hidden">
+                &#9776;
+            </button>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:block">
                 <div class="ml-10 flex items-baseline space-x-4">
                     <a href="index.html" class="text-accent hover:text-secondary px-3 py-2 text-sm">Acasă</a>
                     <a href="fiirbots.html" class="text-accent hover:text-secondary px-3 py-2 text-sm">FIIRBots</a>
@@ -26,4 +30,35 @@
             </div>
         </div>
     </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out flex flex-col bg-primary lg:hidden">
+        <a href="index.html" class="menu-link px-4 py-2 text-white hover:bg-secondary">Acasă</a>
+        <a href="fiirbots.html" class="menu-link px-4 py-2 text-white hover:bg-secondary">FIIRBots</a>
+        <a href="proiecte.html" class="menu-link px-4 py-2 text-white hover:bg-secondary">Proiecte</a>
+        <a href="viziune.html" class="menu-link px-4 py-2 text-white hover:bg-secondary">Viziune</a>
+        <a href="parteneri.html" class="menu-link px-4 py-2 text-white hover:bg-secondary">Parteneri</a>
+        <a href="contact.html" class="menu-link px-4 py-2 text-white hover:bg-secondary">Contact</a>
+        <a href="get-involved.html" class="menu-link px-4 py-2 text-white hover:bg-secondary">Implică-te</a>
+    </div>
 </nav>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuLinks = document.querySelectorAll('.menu-link');
+
+    menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('max-h-0');
+        mobileMenu.classList.toggle('max-h-screen');
+    });
+
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('max-h-0');
+            mobileMenu.classList.remove('max-h-screen');
+        });
+    });
+});
+</script>
